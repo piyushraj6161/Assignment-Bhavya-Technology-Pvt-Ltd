@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Subject Selection Form</title>
+<link rel="stylesheet" href="style.css">
+<!-- Include Toastify library -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Subject Selection Form</h1>
+    <form id="studentForm" action="submit.php" method="post">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required><br>
+        
+        <!-- Subject selection dropdowns -->
+        <div id="subjectDropdowns">
+            <!-- This div will be dynamically populated -->
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script src="script.js"></script>
+<!-- Include Toastify library -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="toast.js"></script>
+</body>
+</html>
